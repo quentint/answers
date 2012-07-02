@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="483px"
+	 height="390px" viewBox="0 0 483 390" enable-background="new 0 0 483 390" xml:space="preserve">
+<g>
+	<g>
+		<polyline fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" points="480.5,379.2 7.9,379.2 7.9,0 		"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="14.8" y1="24.4" x2="0" y2="24.4"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="14.8" y1="63.9" x2="0" y2="63.9"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="14.8" y1="103.3" x2="0" y2="103.3"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="14.8" y1="142.8" x2="0" y2="142.8"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="14.8" y1="182.2" x2="0" y2="182.2"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="14.8" y1="221.6" x2="0" y2="221.6"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="14.8" y1="261.1" x2="0" y2="261.1"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="14.8" y1="300.5" x2="0" y2="300.5"/>
+		<line fill="none" stroke="#000000" stroke-miterlimit="10" x1="14.8" y1="340" x2="0" y2="340"/>
+		<rect x="23.8" y="380" width="442.9" height="10.6"/>
+	</g>
+</g>
+</svg>

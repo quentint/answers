@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595px"
+	 height="90px" viewBox="0 0 595 90" enable-background="new 0 0 595 90" xml:space="preserve">
+<g>
+	<g>
+		<line fill="none" stroke="#000000" stroke-width="1.611" stroke-miterlimit="10" x1="39.5" y1="57.6" x2="39.5" y2="86.6"/>
+		<line fill="none" stroke="#000000" stroke-width="1.611" stroke-miterlimit="10" x1="34.1" y1="57.6" x2="34.1" y2="86.6"/>
+		<rect x="2" y="57.6" fill="none" stroke="#000000" stroke-width="1.611" stroke-miterlimit="10" width="42.4" height="29"/>
+		<line fill="none" stroke="#000000" stroke-width="1.611" stroke-miterlimit="10" x1="28.8" y1="57.6" x2="28.8" y2="86.6"/>
+		<line fill="none" stroke="#000000" stroke-width="1.611" stroke-miterlimit="10" x1="23.4" y1="57.6" x2="23.4" y2="86.6"/>
+		<line fill="none" stroke="#000000" stroke-width="1.611" stroke-miterlimit="10" x1="18.1" y1="57.6" x2="18.1" y2="86.6"/>
+		<line fill="none" stroke="#000000" stroke-width="1.611" stroke-miterlimit="10" x1="12.7" y1="57.6" x2="12.7" y2="86.6"/>
+		<line fill="none" stroke="#000000" stroke-width="1.611" stroke-miterlimit="10" x1="7.4" y1="57.6" x2="7.4" y2="86.6"/>
+	</g>
+	<g>
+		<rect x="321.4" y="25.4" width="16.7" height="33.5"/>
+		<line fill="none" stroke="#000000" stroke-width="1.6" stroke-miterlimit="10" x1="382.1" y1="1" x2="382.1" y2="86"/>
+		<g>
+			<line fill="none" stroke="#000000" stroke-width="0.5333" stroke-miterlimit="10" x1="591.8" y1="77.6" x2="344.5" y2="77.6"/>
+			<line fill="none" stroke="#000000" stroke-width="0.5333" stroke-miterlimit="10" x1="591.8" y1="81.6" x2="344.5" y2="81.6"/>
+			<line fill="none" stroke="#000000" stroke-width="0.5333" stroke-miterlimit="10" x1="591.8" y1="73.6" x2="344.3" y2="73.6"/>
+			<line fill="none" stroke="#000000" stroke-width="0.5333" stroke-miterlimit="10" x1="591.8" y1="69.6" x2="344.3" y2="69.6"/>
+			<line fill="none" stroke="#000000" stroke-width="0.5333" stroke-miterlimit="10" x1="591.8" y1="61.6" x2="344.3" y2="61.6"/>
+			<line fill="none" stroke="#000000" stroke-width="0.5333" stroke-miterlimit="10" x1="591.8" y1="65.6" x2="344.3" y2="65.6"/>
+		</g>
+		<polygon fill="none" stroke="#000000" stroke-width="1.6" stroke-miterlimit="10" points="344.3,83.3 344.3,4.1 381.4,1 591.8,1 
+			591.8,42 591.8,45 591.8,86 381.4,86 		"/>
+	</g>
+</g>
+</svg>
