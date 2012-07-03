@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="450px"
+	 height="272px" viewBox="0 0 450 272" enable-background="new 0 0 450 272" xml:space="preserve">
+<g>
+	<g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M2.1,272.1l0-48.6c0-3.3,2.7-6,6-6h332.3"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M44.6,162.6l0,48.6c0,3.3,2.7,6,6,6"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M337.8,217.7l0-181.6c0-3.3-2.7-6-6-6h-53"/>
+		</g>
+		<g>
+			<g>
+				<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M417.8,1h-32c-3.3,0-6,2.7-6,6l0,128.6l-0.2,16.9"/>
+			</g>
+			<g>
+				<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M379.6,152.6l0,57.2c0,3.3-2.7,6-6,6H338"/>
+			</g>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M446,41.7h-60.2c-3.3,0-6,2.7-6,6"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M110.1,127.3l0,83.9c0,3.3,2.7,6,6,6"/>
+		</g>
+		<g>
+			<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M83.6,56.3l0,154.9c0,3.3,2.7,6,6,6"/>
+		</g>
+		<circle fill="#746367" stroke="#000000" stroke-width="3" stroke-miterlimit="10" cx="338.2" cy="217.1" r="5.3"/>
+	</g>
+</g>
+</svg>

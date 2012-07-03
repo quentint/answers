@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="155px" height="178px" viewBox="0 0 155 178" enable-background="new 0 0 155 178" xml:space="preserve">
+<g>
+	<g>
+		<path d="M40.4,103.7c-7-15-0.5-32.7,14.5-39.7s32.7-0.5,39.7,14.5s0.5,32.7-14.5,39.7C65.1,125.2,47.3,118.7,40.4,103.7z"/>
+		<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="92.9" y1="106.3" x2="114.9" y2="118.8"/>
+		<path fill="#8C8083" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M148.9,138.1c-5.3,9.4-17.3,12.7-26.7,7.4
+			c-9.4-5.3-12.7-17.3-7.4-26.7c5.3-9.4,17.3-12.7,26.7-7.4C151,116.7,154.3,128.7,148.9,138.1z"/>
+		<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="79.5" y1="64" x2="89.2" y2="40.7"/>
+		<path fill="#8C8083" stroke="#000000" stroke-width="3" stroke-miterlimit="10" d="M104.3,4.5c10,4.2,14.7,15.6,10.5,25.6
+			S99.1,44.8,89.2,40.6c-10-4.2-14.7-15.7-10.5-25.7C82.8,5.1,94.3,0.3,104.3,4.5z"/>
+	</g>
+</g>
+</svg>

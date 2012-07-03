@@ -3,6 +3,7 @@
 include( TEMPLATEPATH.'/constants.php' );
 include( TEMPLATEPATH.'/classes.php' );
 include( TEMPLATEPATH.'/widgets.php' );
+include( TEMPLATEPATH.'/more-functions.php' );
 
 /**
  * Disable automatic general feed link outputting.

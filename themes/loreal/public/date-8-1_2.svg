@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="300px" height="262px" viewBox="0 0 300 262" enable-background="new 0 0 300 262" xml:space="preserve">
+<g>
+	<rect x="64.8" y="28.2" width="46.2" height="10.1"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="105.1" y1="3" x2="105.1" y2="24.6"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="99.3" y1="3" x2="99.3" y2="24.6"/>
+	<rect x="64.3" y="3" fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" width="46.1" height="21.6"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="93.5" y1="3" x2="93.5" y2="24.6"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="87.7" y1="3" x2="87.7" y2="24.6"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="81.8" y1="3" x2="81.8" y2="24.6"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="76" y1="3" x2="76" y2="24.6"/>
+	<line fill="none" stroke="#000000" stroke-width="3" stroke-miterlimit="10" x1="70.2" y1="3" x2="70.2" y2="24.6"/>
+	<path fill="none" stroke="#000000" stroke-miterlimit="10" d="M109.5,72.6c-7.1,0.2-12.8,6-12.8,13.1v135.2
+		c0,7.1,5.7,12.9,12.8,13.1"/>
+	<path d="M96.7,220.9V87.8c-0.6-0.2-1.2-0.4-1.8-0.5c-4.2-1.5-8-8.1-8.6-11.9l0,0l0,0v0.1c-0.6,4-3,11.1-8.8,11.9
+		c-10.2,1.5-12.1,12.3-12.1,12.3v161.7h44V234C102.3,233.8,96.7,228,96.7,220.9z"/>
+	<rect x="65.4" y="45.3" fill="none" stroke="#0F0F0F" stroke-width="3" stroke-miterlimit="10" width="44" height="216.1"/>
+</g>
+</svg>
