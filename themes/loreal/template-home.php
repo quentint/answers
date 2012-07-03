@@ -31,6 +31,15 @@ Template Name: Home Template
 			<li><a href="#">6</a></li>
 		</ul>
 	</div>
+
+	<div>
+		<?php 
+				if(function_exists("print_home_slider")) :
+				//		print_home_slider(1);
+				endif;
+		?>
+	</div>
+
 	<!-- intro-section -->
 	<section class="intro-section">
 		<?php if(have_posts()): the_post();?>
