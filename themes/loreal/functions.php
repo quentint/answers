@@ -6,9 +6,24 @@ include( TEMPLATEPATH.'/widgets.php' );
 include( TEMPLATEPATH.'/more-functions.php' );
 
 if(!is_admin()){
+
+	wp_deregister_script("jquery");
+
+	wp_enqueue_script(
+  	  "jquery",
+    	get_template_directory_uri() . "/js/jquery-1.7.2.min.js?v=1",
+    	true, true, true
+	);
+
+
 	wp_enqueue_script(
   	  "flex-slider.js",
     	get_template_directory_uri() . "/js/jquery.flexslider-min.js?v=1",
+    	true, true, true
+	);
+	wp_enqueue_script(
+  	  "jquery.main.js",
+    	get_template_directory_uri() . "/js/jquery.main.js?v=1",
     	true, true, true
 	);
 
@@ -83,11 +98,15 @@ function create_quick_page() {
 		</p>
 
 	</form>
-
+<style>
+#quick-infos{width: auto;float: right;margin-right: 10px;color: green;}
+</style>
 <script type="text/javascript" >
 jQuery(document).ready(function($) {
 	// since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
-	jQuery("#quick-page-press").submit(function() {		
+	jQuery("#quick-page-press").submit(function() {	
+	var data = jQuery(this).serializeArray();
+	if(data.length>0 && data[0].value != ""){
 		jQuery.post(ajaxurl, jQuery(this).serializeArray(), function(response) {
 				//alert('Got this from the server: ' + response);
 				jQuery("#quick-infos").remove();
@@ -109,6 +128,10 @@ jQuery(document).ready(function($) {
 				}
 				
 		});
+	}
+	else{
+		alert('<?php _e("Please enter some data","answers"); ?>');
+	}
 		return false;
 	});
 });
@@ -118,7 +141,7 @@ jQuery(document).ready(function($) {
 }
 
 function create_quick_page_add_dashboard_widget() {
-    wp_add_dashboard_widget( 'create_quick_page-custom-widget', __('Quick page', 'answers'), 'create_quick_page' );
+    wp_add_dashboard_widget( 'create_quick_page-custom-widget', __('Quick page creation', 'answers'), 'create_quick_page' );
 }
 
 add_action( 'wp_dashboard_setup', 'create_quick_page_add_dashboard_widget' );
@@ -132,6 +155,7 @@ automatic_feed_links( false );
 remove_action('wp_head', 'wp_generator');
 
 if ( function_exists('register_sidebar') ) {
+	
 	register_sidebar(array(
 		'id' => 'lang-sidebar',
 		'name' => 'Lang Sidebar',
@@ -140,23 +164,46 @@ if ( function_exists('register_sidebar') ) {
 		'before_title' => '<h3>',
 		'after_title' => '</h3>'
 	));
-	register_sidebar(array(
-		'id' => 'default-sidebar',
-		'name' => 'Default Sidebar',
-		'before_widget' => '<!-- box --><div class="box %2$s" id="%1$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h3><span>',
-		'after_title' => '</span></h3>'
-	));
-	register_sidebar(array(
-		'id' => 'menus-sidebar',
-		'name' => 'Menus Sidebar',
-		'before_widget' => '<div class="col %2$s" id="%1$s">',
-		'after_widget' => '</div>',
-		'before_title' => '<h4>',
-		'after_title' => '</h4>'
-	));
 	
+	$langs = get_option('qtranslate_enabled_languages');
+	if($langs){
+		foreach($langs as $lang){
+			
+			register_sidebar(array(
+					'id' => 'default-sidebar-'.$lang,
+					'name' => 'Default Sidebar['. $lang .']',
+					'before_widget' => '<!-- box --><div class="box %2$s" id="%1$s">',
+					'after_widget' => '</div>',
+					'before_title' => '<h3><span>',
+					'after_title' => '</span></h3>'
+					));
+			
+			register_sidebar(array(
+				'id' => 'menus-sidebar-'.$lang,
+				'name' => 'Menus Sidebar['. $lang .']',
+				'before_widget' => '<div class="col %2$s" id="%1$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h4>',
+				'after_title' => '</h4>'
+				));
+
+			register_sidebar(array(
+					'id' => 'home-sidebar-'.$lang,
+					'name' => 'Home Sidebar['. $lang .']',
+					'before_widget' => '<!-- col --><div class="col %2$s" id="%1$s">',
+					'after_widget' => '</div>',
+					'before_title' => '<h3><span>',
+					'after_title' => '</span></h3>'
+			));
+
+		}
+		
+	}		
+}
+
+function get_locale_suffix(){
+	$locale = get_locale(); $locale = substr($locale,0,strpos($locale,'_'));
+	return $locale;
 }
 
 if ( function_exists( 'add_theme_support' ) ) {
@@ -169,6 +216,20 @@ if ( function_exists( 'add_theme_support' ) ) {
 register_nav_menus( array(
 	'primary' => __( 'Primary Navigation', 'base' ),
 ) );
+
+function home_sidebar_params($params) {
+
+    $sidebar_id = $params[0]['id'];
+
+    if ( strlen(strstr($sidebar_id,'home-sidebar-')) > 0) {
+        $total_widgets = wp_get_sidebars_widgets();
+        $sidebar_widgets = count($total_widgets[$sidebar_id]);
+        $params[0]['before_widget'] = str_replace('class="', 'class="span' . floor(12 / $sidebar_widgets) . ' ', $params[0]['before_widget']);
+    }
+
+    return $params;
+}
+add_filter('dynamic_sidebar_params','home_sidebar_params');
 
 
 //add [email]...[/email] shortcode
@@ -362,5 +423,12 @@ function qtrans_generateLanguageSelectCode_custom($style='', $id='') {
 			break;
 	}
 }
+
+/*Fix the qtranslate menu*/
+function qtrans_menuitem( $menu_item ) {
+   $menu_item->title = qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage( $menu_item->title );
+   return $menu_item;
+}
+add_filter('wp_setup_nav_menu_item', 'qtrans_menuitem', 0);
 
 ?>

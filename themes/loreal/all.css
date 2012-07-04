@@ -310,6 +310,7 @@ ul li{list-style-type:disc;}
 }
 .gallery .switcher a {
 	background:url(images/bg-switcher.png) no-repeat 100% 0;
+	background-position: -56px 0px;
 	height:19px;
 	width:19px;
 	text-indent:-9999px;
@@ -317,6 +318,7 @@ ul li{list-style-type:disc;}
 	display:block;
 }
 .gallery .switcher a.pause {background-position:0 0 !important;}
+ul.pause a.pause.active {background-position: -81px 0px !important;}
 .gallery .switcher .active a,
 .gallery .switcher a:hover {
 	background-position:-28px 0;
@@ -425,11 +427,31 @@ ul.pause{
 	overflow:hidden;
 	padding: 0 5.07% 48px;
 }
+
+.intro-section .col img{
+	width: 100%;
+	height: auto;
+}
+
 .intro-section .col {
 	float:left;
 	width:34.04%;
 	padding:0 7.39%;
 }
+.intro-section .col.span12{
+	width:100%;
+}
+.intro-section .col.span6{
+	width: 41%;
+	padding: 0 4.12%;
+}
+.intro-section .col.span4{
+	width: 28.47%;
+	margin: 0px;
+	padding: 0 2.22%;
+}
+
+
 .intro-section h3 {
 	font: 2em/1.25em AvantGardeStd-Demi, Arial, Helvetica, sans-serif;
 	margin:0 0 17px;
@@ -613,6 +635,8 @@ ul.pause{
 .flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .active {background-position:-28px 0;}
+
+
 
 /* Responsive Web Design */
 /* 980 */
@@ -833,6 +857,20 @@ ul.pause{
 }
 /* 480 */
 @media only screen and (max-width: 800px) {
+
+	
+	.intro-section .col.span12,
+	.intro-section .col.span6,
+	.intro-section .col.span4,
+	.intro-section .col.span4 {
+		width: auto;
+		float: none;
+		overflow: hidden;
+		padding: 11px 16px 5px;
+		margin: 0 0 12px;
+		text-align: center;
+	}
+
 	#wrapper {width:100%;}
 	.logo {
 		margin:0 auto 18px;
@@ -878,7 +916,7 @@ ul.pause{
 	}
 
 	ul.pause{
-		width: 16px;
+		width: 100%;
 		top: 11px;
 		display: block;
 		position: relative;
@@ -888,11 +926,16 @@ ul.pause{
 
 	ul.pause li{
 		height:14px;
+		width:100%;
+	}
+
+	.flex-control-paging li a{
 		width:14px;
 	}
 
 	.flex-control-paging li a.flex-active{
-		background-position: -20px 0;
+		width:14px;
+		background-position: -21px 0;
 	}
 
 	.gallery.slideshow img {
@@ -921,6 +964,11 @@ ul.pause{
 		height:14px;
 		width:14px;
 	}
+
+	.gallery .switcher a,  ol.flex-control-paging li a{
+		background-position: -42px 0px;
+	}
+
 	* +html .gallery .switcher li {
 		display:inline;
 		padding:0 5px;
@@ -1080,6 +1128,19 @@ ul.pause{
 }
 /* 320 */
 @media only screen and (max-width: 400px) {
+
+	.intro-section .col.span12,
+	.intro-section .col.span6,
+	.intro-section .col.span4,
+	.intro-section .col.span4 {
+		width: auto;
+		float: none;
+		overflow: hidden;
+		padding: 11px 16px 5px;
+		margin: 0 0 12px;
+		text-align: center;
+	}
+
 	#wrapper {width:100%;}
 	.logo {
 		margin:0 auto 18px;
@@ -1141,7 +1202,7 @@ ul.pause{
 	}
 	
 	ul.pause{
-		width: 16px;;
+		width: 100%;
 		top: 11px;
 		display: block;
 		position: relative;
@@ -1149,31 +1210,51 @@ ul.pause{
 		float: none;
 	}
 
-	.flex-control-paging li a.flex-active{
-		background-position: -20px 0;
-	}
-
 	ul.pause li{
 		height:14px;
+		width:100%;
+	}
+
+	.flex-control-paging li a.flex-active{
 		width:14px;
+		background-position: -21px 0;
+	}
+
+	.gallery.slideshow img {
+		margin:0;
+		min-width:1px;
 	}
 
 	.flex-control-paging li a.flex-active, .flex-control-paging li a:hover{
-		background-position: -20px 0;
+		background-position: -21px 0;
 	}
 
-	.gallery .switcher a, ol.flex-control-paging li a {
+	.gallery .switcher, ol.flex-control-paging {
+		width:100%;
+		text-align:center;
+		padding:0;
+		right:0;
+	}
+	.gallery .switcher li, ol.flex-control-paging li {
+		padding:0 2px;
+		margin:0;
+		display:inline-block;
+		float:none;
+	}
+	.gallery .switcher a,  ol.flex-control-paging li a {
 		background:url(images/bg-switcher2.png) no-repeat 100% 0;
 		height:14px;
 		width:14px;
+		background-position: -42px 0px;
 	}
+
 	* +html .gallery .switcher li, ol.flex-control-paging li {
 		display:inline;
 		padding:0 5px;
 	}
 	.gallery .switcher a:hover,
 	.gallery .switcher .active a,  ol.flex-control-paging a:hover, ol.flex-control-paging a:active {
-		background-position:-20px 0;
+		background-position:-21px 0;
 	}
 	.gallery .caption {
 		padding: 7px 15px 6px 15px;
