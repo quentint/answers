@@ -626,7 +626,7 @@ ul.pause{
 	ul.pause{
 		width: auto;
 		top: 11px;
-		display: block;
+		display: inline;
 		position: relative;
 		z-index: 10;
 	}

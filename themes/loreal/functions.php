@@ -22,7 +22,106 @@ if(!is_admin()){
 
 }
 
+function page_quick_save_callback(){
+	// Create post object
+  $my_post = array(
+     'post_title' => $_POST['post_title'],
+     'post_content' => $_POST['content'],
+     'post_status' => 'draft',
+     'post_author' => wp_get_current_user()->ID,
+     'post_type' => $_POST['post_type']
+  );
 
+// Insert the post into the database
+  try{
+  	wp_insert_post( $my_post );
+  	echo '{"success":"true","msg":"'.__("The page has been addded").'"}';
+  	// this is required to return a proper result
+  	die(); 
+	}catch(Exception $e){
+		echo json_encode($e);
+		// this is required to return a proper result
+		die(); 
+	}
+}
+
+add_action('wp_ajax_page_quick_save', 'page_quick_save_callback');
+
+function create_quick_page() {
+?>
+
+	<form name="post" action="<?php echo esc_url( admin_url( 'post.php' ) ); ?>" method="post" id="quick-page-press">
+		<h4 id="quick-page-title"><label for="page_title"><?php _e('Title') ?></label></h4>
+		<div class="input-text-wrap">
+			<input type="text" name="post_title" id="page_title" tabindex="1" autocomplete="off" value="" />
+		</div>
+
+		<?php if ( current_user_can( 'upload_files' ) ) : ?>
+		<div id="wp-content-wrap" class="wp-editor-wrap hide-if-no-js wp-media-buttons">
+			<?php do_action( 'media_buttons', 'content' ); ?>
+		</div>
+		<?php endif; ?>
+
+		<h4 id="content-label"><label for="content-page"><?php _e('Content') ?></label></h4>
+		<div class="textarea-wrap">
+			<textarea name="content" id="content-page" class="mceEditor" rows="3" cols="15" tabindex="2"></textarea>
+		</div>
+
+		<script type="text/javascript">edCanvas = document.getElementById('content-page');edInsertContent = null;</script>
+
+
+		<p class="submit">
+			<input type="hidden" name="action" id="quickpage-action" value="page_quick_save" />
+			<input type="hidden" name="post_type" value="page" />
+			<?php wp_nonce_field('add-page'); ?>
+			<input type="reset" value="<?php esc_attr_e( 'Reset' ); ?>" class="button" />
+			<span id="publishing-action">
+				<input type="submit" name="publish-page" style="float:right;" id="publish-page" accesskey="p" tabindex="5" class="button-primary" value="<?php current_user_can('publish_posts') ? esc_attr_e('Publish') : esc_attr_e('Submit for Review'); ?>" />
+				<img class="waiting" src="<?php echo esc_url( admin_url( 'images/wpspin_light.gif' ) ); ?>" alt="" />
+			</span>
+			<br class="clear" />
+		</p>
+
+	</form>
+
+<script type="text/javascript" >
+jQuery(document).ready(function($) {
+	// since 2.8 ajaxurl is always defined in the admin header and points to admin-ajax.php
+	jQuery("#quick-page-press").submit(function() {		
+		jQuery.post(ajaxurl, jQuery(this).serializeArray(), function(response) {
+				//alert('Got this from the server: ' + response);
+				jQuery("#quick-infos").remove();
+				response = jQuery.parseJSON( response );
+				if(response.success){
+					jQuery("#quick-page-press").find("input[type=text], textarea").val("");
+				}
+				//jQuery("#publish-page").before("<div>").append("<p>").text(response.msg).delay(5000);
+				if(jQuery("#infos").length < 1){
+					var message = jQuery('<div/>', {
+	    			id: 'quick-infos',
+	    			css:'float:right;color:green;',
+	    			text: response.msg
+					});
+					jQuery("#publish-page").after(message);
+					jQuery("#quick-infos").fadeOut(5000)
+				}else{
+					jQuery("#infos").text(response.msg);
+				}
+				
+		});
+		return false;
+	});
+});
+</script>
+
+<?php
+}
+
+function create_quick_page_add_dashboard_widget() {
+    wp_add_dashboard_widget( 'create_quick_page-custom-widget', __('Quick page', 'answers'), 'create_quick_page' );
+}
+
+add_action( 'wp_dashboard_setup', 'create_quick_page_add_dashboard_widget' );
 
 /**
  * Disable automatic general feed link outputting.
