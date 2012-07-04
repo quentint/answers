@@ -125,8 +125,8 @@ Template Name: Schema
 					<img class="zoom" src="<?php bloginfo('template_url'); ?>/public/zoom-in.svg" width="127" height="127" alt="" />
 				</div>
 				<div class="in-anim b2 idle">
-					<div class="pastille past1 idle"><p></p><span><?php _lm('anim-4-pastille-1') ?></strong></span><p></p></div>
-					<div class="pastille past2 idle"><p></p><span><?php _lm('anim-4-pastille-2') ?></span><p></p></div>
+					<div class="pastille past1 idle"><p></p><span><?php _lm('anim-2-pastille-1') ?></strong></span><p></p></div>
+					<div class="pastille past2 idle"><p></p><span><?php _lm('anim-2-pastille-2') ?></span><p></p></div>
 					<img class="i3 cells idle" src="<?php bloginfo('template_url'); ?>/public/anim-2_2-3.svg" width="310" height="22" alt="" />
 					<img class="i4 cells idle" src="<?php bloginfo('template_url'); ?>/public/anim-2_2-4.svg" width="310" height="22" alt="" />
 					<img class="i5 cells idle" src="<?php bloginfo('template_url'); ?>/public/anim-2_2-5.svg" width="310" height="22" alt="" />
