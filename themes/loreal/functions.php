@@ -5,6 +5,25 @@ include( TEMPLATEPATH.'/classes.php' );
 include( TEMPLATEPATH.'/widgets.php' );
 include( TEMPLATEPATH.'/more-functions.php' );
 
+if(!is_admin()){
+	wp_enqueue_script(
+  	  "flex-slider.js",
+    	get_template_directory_uri() . "/js/jquery.flexslider-min.js?v=1",
+    	true, true, true
+	);
+
+	wp_register_style(
+        'my-style',
+        get_bloginfo( 'stylesheet_directory' ) . '/flexslider.css',
+        false,
+        0.1
+    );
+    wp_enqueue_style( 'my-style' );
+
+}
+
+
+
 /**
  * Disable automatic general feed link outputting.
  */

@@ -367,6 +367,7 @@ ul li{list-style-type:disc;}
 	margin:0;
 	width:auto;
 }
+
 .gallery .caption .link {
 	background:url(images/arrow3.png) no-repeat 100% 50%;
 	float:right;
@@ -383,6 +384,23 @@ ul li{list-style-type:disc;}
 	padding:0 15px 0 0;
 	text-decoration:underline;
 }
+
+ul.pause{
+		margin: 0px;
+		padding: 0px;
+		float: right;
+		width: 19px;;
+		top: 11px;
+		display: block;
+		position: relative;
+		z-index: 10;
+	}
+
+	ul.pause li{
+		height:19px;
+		width:19px;
+	}
+
 .content .gallery .caption .link:hover {text-decoration:none;}
 /* intro-section */
 .intro-section {
@@ -570,6 +588,32 @@ ul li{list-style-type:disc;}
 	padding:0 0 1px;
 }
 #footer .links ul a {color:#5e5e5e;}
+
+/* Control Nav */
+.flex-control-nav {position:relative;
+  float: left;
+  top:11px;
+  z-index:10;
+  width:auto;}
+.flex-control-nav li {margin:0 9px 0 0;
+  width:auto;
+  float:left; important!
+}
+.flex-control-paging li a {background:url(images/bg-switcher.png) no-repeat 100% 0;
+  height:19px;
+  width:19px;
+  text-indent:-9999px;
+  overflow:hidden;
+  display:block;}
+.flex-control-paging li a:hover {background-position:-28px 0;}
+.flex-control-paging li a.flex-active {background-position:-28px 0; cursor: default;position: relative; }
+
+.flex-control-thumbs {margin: 5px 0 0; position: static; overflow: hidden;}
+.flex-control-thumbs li {width: 25%; float: left; margin: 0;}
+.flex-control-thumbs img {width: 100%; display: block; opacity: .7; cursor: pointer;}
+.flex-control-thumbs img:hover {opacity: 1;}
+.flex-control-thumbs .active {background-position:-28px 0;}
+
 /* Responsive Web Design */
 /* 980 */
 @media only screen and (max-width: 1200px) {
@@ -578,6 +622,20 @@ ul li{list-style-type:disc;}
 		padding: 44px 3px 9999px;
 		background:#27161c;
 	}
+
+	ul.pause{
+		width: auto;
+		top: 11px;
+		display: block;
+		position: relative;
+		z-index: 10;
+	}
+
+	ul.pause li{
+		height:19px;
+		width:19px;
+	}
+
 	#sidebar .heading {
 		margin:0 0 10px 10.5%;
 	}
@@ -653,6 +711,20 @@ ul li{list-style-type:disc;}
 	.logo {
 		margin:0 0 18px;
 	}
+
+	ul.pause{
+		width: auto;
+		top: 11px;
+		display: block;
+		position: relative;
+		z-index: 10;
+	}
+
+	ul.pause li{
+		height:19px;
+		width:19px;
+	}
+
 	#sidebar {
 		width: 178px;
 		padding: 44px 10px 9999px;
@@ -804,23 +876,47 @@ ul li{list-style-type:disc;}
 		width:auto;
 		padding:0 14px;
 	}
+
+	ul.pause{
+		width: 16px;
+		top: 11px;
+		display: block;
+		position: relative;
+		z-index: 10;
+		float: none;
+	}
+
+	ul.pause li{
+		height:14px;
+		width:14px;
+	}
+
+	.flex-control-paging li a.flex-active{
+		background-position: -20px 0;
+	}
+
 	.gallery.slideshow img {
 		margin:0;
 		min-width:1px;
 	}
-	.gallery .switcher {
+
+	.flex-control-paging li a.flex-active, .flex-control-paging li a:hover{
+		background-position: -20px 0;
+	}
+
+	.gallery .switcher, ol.flex-control-paging {
 		width:100%;
 		text-align:center;
 		padding:0;
 		right:0;
 	}
-	.gallery .switcher li {
+	.gallery .switcher li, ol.flex-control-paging li {
 		padding:0 2px;
 		margin:0;
 		display:inline-block;
 		float:none;
 	}
-	.gallery .switcher a {
+	.gallery .switcher a,  ol.flex-control-paging li a {
 		background:url(images/bg-switcher2.png) no-repeat 100% 0;
 		height:14px;
 		width:14px;
@@ -830,7 +926,7 @@ ul li{list-style-type:disc;}
 		padding:0 5px;
 	}
 	.gallery .switcher a:hover,
-	.gallery .switcher .active a {
+	.gallery .switcher .active a,  ol.flex-control-paging a:hover, ol.flex-control-paging a:active {
 		background-position:-20px 0;
 	}
 	.gallery .caption {
@@ -1031,29 +1127,52 @@ ul li{list-style-type:disc;}
 		margin:0;
 		min-width:1px;
 	}
-	.gallery .switcher {
+	.gallery .switcher, ol.flex-control-paging {
 		width:100%;
 		text-align:center;
 		padding:0;
 		right:0;
 	}
-	.gallery .switcher li {
+	.gallery .switcher li, ol.flex-control-paging li {
 		padding:0 2px;
 		margin:0;
 		display:inline-block;
 		float:none;
 	}
-	.gallery .switcher a {
+	
+	ul.pause{
+		width: 16px;;
+		top: 11px;
+		display: block;
+		position: relative;
+		z-index: 10;
+		float: none;
+	}
+
+	.flex-control-paging li a.flex-active{
+		background-position: -20px 0;
+	}
+
+	ul.pause li{
+		height:14px;
+		width:14px;
+	}
+
+	.flex-control-paging li a.flex-active, .flex-control-paging li a:hover{
+		background-position: -20px 0;
+	}
+
+	.gallery .switcher a, ol.flex-control-paging li a {
 		background:url(images/bg-switcher2.png) no-repeat 100% 0;
 		height:14px;
 		width:14px;
 	}
-	* +html .gallery .switcher li {
+	* +html .gallery .switcher li, ol.flex-control-paging li {
 		display:inline;
 		padding:0 5px;
 	}
 	.gallery .switcher a:hover,
-	.gallery .switcher .active a {
+	.gallery .switcher .active a,  ol.flex-control-paging a:hover, ol.flex-control-paging a:active {
 		background-position:-20px 0;
 	}
 	.gallery .caption {

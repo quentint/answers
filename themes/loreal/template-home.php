@@ -7,47 +7,42 @@ Template Name: Home Template
 <!-- content column -->
 <div id="content">
 	<!-- gallery -->
-	<div class="gallery">
-		<ul>
+	<div class="gallery flexslider">
+		<div id="flex-controller" class="switcher">
+		</div>
+		<ul class="slides">
 			<!-- slide -->
 			<li>
-				<img src="<?php bloginfo('template_url'); ?>/images/img1.png" alt="image description"/>
+				<img src="<?php bloginfo('template_url'); ?>/images/timeline.png" alt="image description"/>
 				<!-- caption -->
 				<div class="caption">
 					<strong class="ttl">L’engagement</strong>
 					<strong class="sub-ttl">l’oreal depuis 1989</strong>
-					<a href="#" class="link">LANCEZ L’ANIMATION</a>
+					<a href="http://answers.draft.lu/?page_id=221" class="link">LANCEZ L’ANIMATION</a>
+				</div>
+			</li>
+			<li>
+				<img src="<?php bloginfo('template_url'); ?>/images/schema.png" alt="image description"/>
+				<!-- caption -->
+				<div class="caption">
+					<strong class="ttl">Reconstruire la peau humaine pour remplacer les tests sur animaux</strong>
+					<strong class="sub-ttl">L'innovation par l’oreal</strong>
+					<a href="http://answers.draft.lu/?page_id=231" class="link">LANCEZ L’ANIMATION</a>
 				</div>
 			</li>
 		</ul>
 		<!-- switcher -->
-		<ul class="switcher">
-			<li><a href="#" class="pause">pause</a></li>
-			<li class="active"><a href="#">1</a></li>
-			<li><a href="#">2</a></li>
-			<li><a href="#">3</a></li>
-			<li><a href="#">4</a></li>
-			<li><a href="#">5</a></li>
-			<li><a href="#">6</a></li>
-		</ul>
-	</div>
-
-	<div>
-		<?php 
-				if(function_exists("print_home_slider")) :
-				//		print_home_slider(1);
-				endif;
-		?>
 	</div>
 
 	<!-- intro-section -->
 	<section class="intro-section">
 		<?php if(have_posts()): the_post();?>
-			<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>
+			<!--<h2><a href="<?php the_permalink();?>"><?php the_title();?></a></h2>-->
+			<h2><?php the_title();?></h2>
 			<?php the_content();?>
 		<?php else:?>
-			<h2>Not Found</h2>
-			<p>Sorry, but you are looking for something that isn't here.</p>
+			<h2><?php _e("Not Found","answers");?></h2>
+			<p><?php _e("Sorry, but you are looking for something that isn't here.", "answers");?></p>
 		<?php endif;?>
 		
 	</section>
