@@ -8,6 +8,7 @@ Template Name: Timeline
 <head>
 	<meta charset="utf-8" />
 	<title>L'Oréal Answers - The Key Moments of L'Oreal's Commitment</title>
+	<script type="text/javascript" charset="utf-8" src="<?php bloginfo('template_url'); ?>/more-js/svg.js"></script>
 	<script type="text/javascript" charset="utf-8" src="<?php bloginfo('template_url'); ?>/more-js/modernizr.js"></script>
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/more-css/style-timeline.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/more-css/fonts.css" type="text/css" media="screen" />
