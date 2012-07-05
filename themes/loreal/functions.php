@@ -408,4 +408,151 @@ function qtrans_generateLanguageSelectCode_custom($style='', $id='') {
 			break;
 	}
 }
+
+function autoblank($text) {
+	$return = str_replace("<a", "<a target='_blank'", $text);
+	return $return;
+}
+add_filter('the_content', 'autoblank');
+
+/*Fix the qtranslate menu*/
+function qtrans_extern_menu_item(  $menu_id = 0, $menu_item_db_id = 0, $menu_item_data = array() ) {
+	$menu_id = (int) $menu_id;
+	$menu_item_db_id = (int) $menu_item_db_id;
+
+	// make sure that we don't convert non-nav_menu_item objects into nav_menu_item objects
+	if ( ! empty( $menu_item_db_id ) && ! is_nav_menu_item( $menu_item_db_id ) )
+		return new WP_Error('update_nav_menu_item_failed', __('The given object ID is not that of a menu item.'));
+
+	$menu = wp_get_nav_menu_object( $menu_id );
+
+	if ( ( ! $menu && 0 !== $menu_id ) || is_wp_error( $menu ) )
+		return $menu;
+
+	$menu_items = 0 == $menu_id ? array() : (array) wp_get_nav_menu_items( $menu_id, array( 'post_status' => 'publish,draft' ) );
+
+	$count = count( $menu_items );
+
+	$defaults = array(
+		'menu-item-db-id' => $menu_item_db_id,
+		'menu-item-object-id' => 0,
+		'menu-item-object' => '',
+		'menu-item-parent-id' => 0,
+		'menu-item-position' => 0,
+		'menu-item-type' => 'custom',
+		'menu-item-title' => '',
+		'menu-item-url' => '',
+		'menu-item-description' => '',
+		'menu-item-attr-title' => '',
+		'menu-item-target' => '',
+		'menu-item-classes' => '',
+		'menu-item-xfn' => '',
+		'menu-item-status' => '',
+	);
+
+	$args = wp_parse_args( $menu_item_data, $defaults );
+
+	if ( 0 == $menu_id ) {
+		$args['menu-item-position'] = 1;
+	} elseif ( 0 == (int) $args['menu-item-position'] ) {
+		$last_item = array_pop( $menu_items );
+		$args['menu-item-position'] = ( $last_item && isset( $last_item->menu_order ) ) ? 1 + $last_item->menu_order : $count;
+	}
+
+	$original_parent = 0 < $menu_item_db_id ? get_post_field( 'post_parent', $menu_item_db_id ) : 0;
+
+	if ( 'custom' != $args['menu-item-type'] ) {
+		/* if non-custom menu item, then:
+			* use original object's URL
+			* blank default title to sync with original object's
+		*/
+
+		$args['menu-item-url'] = '';
+
+		$original_title = '';
+		if ( 'taxonomy' == $args['menu-item-type'] ) {
+			$original_parent = get_term_field( 'parent', $args['menu-item-object-id'], $args['menu-item-object'], 'raw' );
+			$original_title = get_term_field( 'name', $args['menu-item-object-id'], $args['menu-item-object'], 'raw' );
+		} elseif ( 'post_type' == $args['menu-item-type'] ) {
+
+			$original_object = get_post( $args['menu-item-object-id'] );
+			$original_parent = (int) $original_object->post_parent;
+			$original_title = $original_object->post_title;
+		}
+
+		if ( empty( $args['menu-item-title'] ) || $args['menu-item-title'] == $original_title ) {
+			$args['menu-item-title'] = '';
+
+			// hack to get wp to create a post object when too many properties are empty
+			if ( empty( $args['menu-item-description'] ) )
+				$args['menu-item-description'] = ' ';
+		}
+	}
+
+	// Populate the menu item object
+	$post = array(
+		'menu_order' => $args['menu-item-position'],
+		'ping_status' => 0,
+		'post_content' => $args['menu-item-description'],
+		'post_excerpt' => $args['menu-item-attr-title'],
+		'post_parent' => $original_parent,
+		'post_title' => $args['menu-item-title'],
+		'post_type' => 'nav_menu_item',
+	);
+
+	if ( 0 != $menu_id )
+		$post['tax_input'] = array( 'nav_menu' => array( intval( $menu->term_id ) ) );
+
+	// New menu item. Default is draft status
+	if ( 0 == $menu_item_db_id ) {
+		$post['ID'] = 0;
+		$post['post_status'] = 'publish' == $args['menu-item-status'] ? 'publish' : 'draft';
+		$menu_item_db_id = wp_insert_post( $post );
+
+	// Update existing menu item. Default is publish status
+	} else {
+		$post['ID'] = $menu_item_db_id;
+		$post['post_status'] = 'draft' == $args['menu-item-status'] ? 'draft' : 'publish';
+		wp_update_post( $post );
+	}
+
+	if ( 'custom' == $args['menu-item-type'] ) {
+		$args['menu-item-object-id'] = $menu_item_db_id;
+		$args['menu-item-object'] = 'custom';
+	}
+
+	if ( ! $menu_item_db_id || is_wp_error( $menu_item_db_id ) )
+		return $menu_item_db_id;
+
+	$menu_item_db_id = (int) $menu_item_db_id;
+
+	update_post_meta( $menu_item_db_id, '_menu_item_type', sanitize_key($args['menu-item-type']) );
+	update_post_meta( $menu_item_db_id, '_menu_item_menu_item_parent', (int) $args['menu-item-parent-id'] );
+	update_post_meta( $menu_item_db_id, '_menu_item_object_id', (int) $args['menu-item-object-id'] );
+	update_post_meta( $menu_item_db_id, '_menu_item_object', sanitize_key($args['menu-item-object']) );
+	update_post_meta( $menu_item_db_id, '_menu_item_target', sanitize_key($args['menu-item-target']) );
+	
+	if(!is_array($args['menu-item-classes']))
+		$args['menu-item-classes'] = array_map( 'sanitize_html_class', explode( ' ', $args['menu-item-classes'] ) );
+	$args['menu-item-xfn'] = implode( ' ', array_map( 'sanitize_html_class', explode( ' ', $args['menu-item-xfn'] ) ) );
+	update_post_meta( $menu_item_db_id, '_menu_item_classes', $args['menu-item-classes'] );
+	update_post_meta( $menu_item_db_id, '_menu_item_xfn', $args['menu-item-xfn'] );
+	
+	if($args["menu-item-type"] == "custom"){
+		update_post_meta( $menu_item_db_id, '_menu_item_url', $args['menu-item-url'] );
+	}else{
+		update_post_meta( $menu_item_db_id, '_menu_item_url', esc_url_raw($args['menu-item-url']) );
+	}
+
+	if ( 0 == $menu_id )
+		update_post_meta( $menu_item_db_id, '_menu_item_orphaned', time() );
+	else
+		delete_post_meta( $menu_item_db_id, '_menu_item_orphaned' );
+
+	//do_action('wp_update_nav_menu_item', $menu_id, $menu_item_db_id, $args );
+
+	//return $menu_item_db_id;
+}
+//add_filter('wp_setup_nav_menu_item', 'qtrans_menuitem', 0);
+add_filter('wp_update_nav_menu_item','qtrans_extern_menu_item',0,3);
 ?>

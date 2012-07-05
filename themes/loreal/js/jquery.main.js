@@ -10,7 +10,7 @@ jQuery(function(){
 
 
 function initSlideShow() {
-	"use strict";
+	
 	if (jQuery('div.slideshow').length > 0) {
 		jQuery('div.slideshow').fadeGallery({
 			slides: 'ul li',
@@ -32,7 +32,7 @@ function initSlideShow() {
 
 
 function inifixGallery(gal) {
-	"use strict";
+	
 	jQuery(gal).each(function() {
 		var holder = jQuery(this);
 		var list = holder.find('> ul');
@@ -53,7 +53,7 @@ function inifixGallery(gal) {
  * jQuery SlideShow plugin
  */
 (function($) {
-	"use strict";
+	
 	function FadeGallery(options) {
 		this.options = $.extend({
 			slides: '.slideshow ul > li',

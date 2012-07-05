@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Answers\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-07-05 13:04+0100\n"
-"PO-Revision-Date: 2012-07-05 15:19+0100\n"
+"POT-Creation-Date: 2012-07-05 23:09+0100\n"
+"PO-Revision-Date: 2012-07-05 23:09+0100\n"
 "Last-Translator: Gabriel <gabriel@soixantecircuits.fr>\n"
 "Language-Team: Soixante circuits <contact@soixantecircuits.fr>\n"
 "MIME-Version: 1.0\n"
@@ -39,39 +39,43 @@ msgstr "ACCÈS RAPIDE"
 msgid "Back to Top"
 msgstr "Retour en haut"
 
-#: functions.php:53
+#: functions.php:38
 msgid "The page has been addded"
 msgstr "La page a été ajoutée"
 
-#: functions.php:69
+#: functions.php:54
 msgid "Title"
 msgstr "Titre"
 
-#: functions.php:80
+#: functions.php:65
 msgid "Content"
 msgstr "Contenu"
 
-#: functions.php:133
+#: functions.php:118
 msgid "Please enter some data"
 msgstr "Merci d'ajouter du contenu"
 
-#: functions.php:144
+#: functions.php:129
 msgid "Quick page creation"
 msgstr "Création rapide de pages"
 
-#: functions.php:217
+#: functions.php:202
 msgid "Primary Navigation"
 msgstr "Navigation première"
 
-#: functions.php:285
+#: functions.php:270
 msgid "Search"
 msgstr "Recherche"
 
-#: header.php:12
+#: functions.php:425
+msgid "The given object ID is not that of a menu item."
+msgstr "L'objet envoyé n'est pas du type menu"
+
+#: header.php:17
 msgid "Javascript must be enabled for the correct page display"
 msgstr "Javascript doit être activé pour que la page s'affiche correctement"
 
-#: header.php:14
+#: header.php:19
 msgid "Skip to Content"
 msgstr "Passer à la suite"
 

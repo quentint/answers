@@ -417,6 +417,12 @@ ul.pause{
 	padding:23px 3.81% 0;
 	margin:0 0 35px;
 }
+.intro-section div{
+	font-size: 109%;
+}
+.intro-section p{
+	font-size: 109%;
+}
 .intro-section a {color:#fff;}
 .intro-section h2 {
 	font: 1.83em/1.19em AvantGardeStd-Demi, Arial, Helvetica, sans-serif;
