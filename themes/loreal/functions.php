@@ -33,7 +33,7 @@ if(!is_admin()){
         false,
         0.1
     );
-    wp_enqueue_style( 'my-style' );
+  wp_enqueue_style( 'my-style' );
 
 }
 

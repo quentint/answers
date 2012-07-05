@@ -9,8 +9,8 @@
 	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/ie.css" /><![endif]-->
 </head>
 <body>
-<noscript><div>Javascript must be enabled for the correct page display</div></noscript>
+<noscript><div><?php _e("Javascript must be enabled for the correct page display","answers");?></div></noscript>
 <!-- skip-link -->
-<div class="skip-link"><a accesskey="s" href="#content">Skip to Content</a></div>
+<div class="skip-link"><a accesskey="s" href="#content"><?php _e("Skip to Content","answers");?></a></div>
 <!-- wrapper -->
 <div id="wrapper">

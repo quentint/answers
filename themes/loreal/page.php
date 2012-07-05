@@ -15,8 +15,8 @@
 			<h1 class="entry-title"><?php the_title();?></h1>
 			<?php the_content();?>
 			<?php else:?>
-				<h1>Not Found</h1>
-				<p>Sorry, but you are looking for something that isn't here.</p>
+				<h1><?php _e("Not Found","answers");?></h1>
+				<p><?php _e("Sorry, but you are looking for something that isn't here.", "answers");?></p>
 			<?php endif;?>
 		</div>
 		<?php get_template_part('slideshow');?>

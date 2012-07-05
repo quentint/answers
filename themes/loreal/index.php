@@ -14,7 +14,7 @@
 		</div>
 		<div class="meta">
 			<ul>
-				<li>Posted in <?php the_category(', ') ?></li>
+				<li><?php _e("Posted in","answers");?>&nbsp;<?php the_category(', ') ?></li>
 				<li><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></li>
 				<?php the_tags('<li>Tags: ', ', ', '</li>'); ?>
 			</ul>
@@ -30,10 +30,10 @@
 	<?php else : ?>
 	<div class="post">
 		<div class="head">
-			<h1>Not Found</h1>
+			<h1><?php_e("Not Found","answers");?></h1>
 		</div>
 		<div class="content">
-			<p>Sorry, but you are looking for something that isn't here.</p>
+			<p><?php _e("Sorry, but you are looking for something that isn't here.", "answers");?></p>
 		</div>
 	</div>
 	<?php endif; ?>

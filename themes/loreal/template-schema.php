@@ -8,6 +8,7 @@ Template Name: Schema
 <head>
 	<meta charset="utf-8" />
 	<title>L'Oréal Answers - Missing headline ### Lorem ipsum ad</title>
+	<script type="text/javascript" charset="utf-8" src="<?php bloginfo('template_url'); ?>/more-js/modernizr.js"></script>
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/more-css/style-schema.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="<?php bloginfo('template_url'); ?>/more-css/fonts.css" type="text/css" media="screen" />
 </head>
@@ -183,7 +184,7 @@ Template Name: Schema
 </div>
 <aside id=sidebar><h1 class="logo vcard"><a href="" class="fn org url">L&#039;Oreal Answers</a></h1><div class=heading><strong class=ttl>ANSWERS</strong><form action="#"><div><label for=sel1 class=hidden>language</label><select class=lang id=sel1 onchange="document.location = this.value"><option value="http://answers.draft.lu/?lang=en">EN<option selected value="http://answers.draft.lu/">FR</select><input type=submit class=hidden value=submit></div></form></div><div class=title><strong>ON ANIMAL TESTING</strong></div><nav class=menu-main-menu-container><ul id=navigation><li id=menu-item-67 class="menu-item menu-item-type-post_type menu-item-object-page active page_item page-item-4 current_page_item menu-item-67"><a href="http://answers.draft.lu/">Home</a></li><li id=menu-item-64 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-64"><a href="http://answers.draft.lu/?page_id=62">key fact</a></li><li id=menu-item-65 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-65"><a href="http://answers.draft.lu/?page_id=60">questions</a></li><li id=menu-item-66 class="menu-item menu-item-type-post_type menu-item-object-page menu-item-66"><a href="http://answers.draft.lu/?page_id=58">links</a></li></ul></nav></aside>
 <noscript><p><?php _lm('no-script') ?></p></noscript>
-<script type="text/javascript" charset="utf-8" src="<?php bloginfo('template_url'); ?>/more-js/modernizr.js"></script>
+<script type="text/javascript" charset="utf-8" src="<?php bloginfo('template_url'); ?>/more-js/jquery.js"></script>
 <script type="text/javascript" charset="utf-8" src="<?php bloginfo('template_url'); ?>/more-js/raphael.js"></script>
 <script type="text/javascript" charset="utf-8" src="<?php bloginfo('template_url'); ?>/more-js/jquery-plugins.js"></script>
 <script type="text/javascript" charset="utf-8" src="<?php bloginfo('template_url'); ?>/more-js/main-schema.js"></script>

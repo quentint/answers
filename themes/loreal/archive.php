@@ -19,8 +19,8 @@
 				<?php previous_posts_link('&laquo; Newer Entries') ?>
 				<?php next_posts_link('Older Entries &raquo;') ?>
 			<?php else:?>
-				<h1>Not Found</h1>
-				<p>Sorry, but you are looking for something that isn't here.</p>
+				<h1><?php _e("Not Found","answers");?></h1>
+				<p><?php _e("Sorry, but you are looking for something that isn't here.", "answers");?></p>
 			<?php endif;?>
 		</div>
 	</section>

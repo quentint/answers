@@ -162,6 +162,11 @@ ul li{list-style-type:disc;}
 	margin: 0 0 23px 10.5%;
 	padding:6px 0 0;
 }
+
+#sidebar .title{
+	text-transform: uppercase;
+}
+
 #sidebar h2,
 #sidebar .heading .ttl {
 	font-size:2em;
