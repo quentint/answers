@@ -408,12 +408,4 @@ function qtrans_generateLanguageSelectCode_custom($style='', $id='') {
 			break;
 	}
 }
-
-/*Fix the qtranslate menu*/
-function qtrans_menuitem( $menu_item ) {
-   $menu_item->title = qtrans_useCurrentLanguageIfNotFoundUseDefaultLanguage( $menu_item->title );
-   return $menu_item;
-}
-add_filter('wp_setup_nav_menu_item', 'qtrans_menuitem', 0);
-
 ?>
