@@ -7,33 +7,7 @@ Template Name: Home Template
 <!-- content column -->
 <div id="content">
 	<!-- gallery -->
-	<div class="gallery flexslider">
-		<div id="flex-controller" class="switcher">
-		</div>
-		<ul class="slides">
-			<!-- slide -->
-			<li>
-				<img src="<?php bloginfo('template_url'); ?>/images/timeline.png" alt="image description"/>
-				<!-- caption -->
-				<div class="caption">
-					<strong class="ttl">L’engagement</strong>
-					<strong class="sub-ttl">l’oreal depuis 1989</strong>
-					<a href="http://answers.draft.lu/?page_id=221" class="link">LANCEZ L’ANIMATION</a>
-				</div>
-			</li>
-			<li>
-				<img src="<?php bloginfo('template_url'); ?>/images/schema.png" alt="image description"/>
-				<!-- caption -->
-				<div class="caption">
-					<strong class="ttl">Reconstruire la peau humaine pour remplacer les tests sur animaux</strong>
-					<strong class="sub-ttl">L'innovation par l’oreal</strong>
-					<a href="http://answers.draft.lu/?page_id=231" class="link">LANCEZ L’ANIMATION</a>
-				</div>
-			</li>
-		</ul>
-		<!-- switcher -->
-	</div>
-
+	<?php print_home_slider(); ?>
 	<!-- intro-section -->
 	<section class="intro-section">
 		<?php if(have_posts()): the_post();?>
