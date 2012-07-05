@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/all.css" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" />
 	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/ie.css" /><![endif]-->
+  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 </head>
 <body>
 <noscript><div><?php _e("Javascript must be enabled for the correct page display","answers");?></div></noscript>
