@@ -101,7 +101,6 @@ Template Name: Schema
 				<h2><?php _lm('anim-0-titre') ?></h2>
 				<p><?php _lm('anim-0-e1') ?></p>
 				<p class="kb">
-
 				<!--[if !IE]>--><img src="<?php bloginfo('template_url'); ?>/public/keyboard.svg" width="100" height="34" alt="" /><![endif]-->
 				<!--[if lt IE 9]><object src="<?php bloginfo('template_url'); ?>/public/keyboard.svg" classid="image/svg+xml" width="100" height="34"> <![endif]-->
       	<!--[if gte IE 9]><object data="<?php bloginfo('template_url'); ?>/public/keyboard.svg" type="image/svg+xml" width="100" height="34"> <![endif]-->
