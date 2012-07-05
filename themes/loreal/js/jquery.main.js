@@ -15,7 +15,7 @@ jQuery(function() {
 		},
 		before: function() {
 			jQuery(".flex-viewport").height(jQuery(".flex-active-slide").next().height());
-		},
+		}
 	});
 	initInputs();
 	jcf.customForms.replaceAll();
