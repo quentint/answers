@@ -1,0 +1,37 @@
+/* TEAM */
+
+                            
+Your title: Soixante circuits and Datagif
+
+                            
+Site: soixantecircuits.fr, datagif.fr
+Mail: contact@soixantecircuits.fr, contact@datagif.fr
+                            
+Twitter: gabrielstuff.
+
+                            
+Location: Paris, France.
+
+                         
+                 
+              
+/* THANKS */
+
+              
+Name: Publicis Consultants and L'Oréal
+                        
+
+                            
+/* SITE */
+
+                            
+Last update: 2012/07/06 
+
+                            
+Standards: HTML5, CSS3, and faaaaaalllback
+
+                            
+Components: Modernizr, jQuery, etc.
+
+                            
+Software: SublimeText2

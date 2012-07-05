@@ -9,6 +9,7 @@
 	<title><?php wp_title(' | ', true, 'right'); ?><?php bloginfo('name'); ?></title>
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="author" href="<?php bloginfo('template_url'); ?>/humans.txt" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/all.css" />
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/style.css" />
 	<!--[if lt IE 9]><link rel="stylesheet" type="text/css" href="<?php bloginfo('template_url'); ?>/ie.css" /><![endif]-->
