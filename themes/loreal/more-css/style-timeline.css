@@ -1044,10 +1044,21 @@ article.current, article.current h3 p, article.current .achievement p {
 	}
 
 	footer {
+		background:none;
+		-webkit-box-shadow: none;
+				box-shadow: none;
+	}
+	footer nav {
+		border:none;
+	}
+	footer nav ul, footer .current-indicator {
 		display:none;
 	}
-	
-	
+}
+@media only screen and (max-height: 620px) {
+	footer h1, footer h2 {
+		display:none;
+	}
 }
 
 @media only screen and (max-device-width: 480px) {
