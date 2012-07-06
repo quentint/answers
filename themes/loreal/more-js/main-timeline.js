@@ -229,7 +229,7 @@ $(function() {
 		boxName: '#date-2',
 		launchedAnim: false,
 		launchAnim: function() {
-			$(B[2].boxName+' .pict.ground-2 img').each(function(i) {
+			$(B[2].boxName+' .pict.ground-2 > *').each(function(i) {
 				$(this).delay(i*400).queue(function() {$(this).removeClass('idle');});
 			});
 			$(B[2].boxName+' .achievement').showAchiev(1600);
@@ -318,7 +318,7 @@ $(function() {
 		boxName: '#date-8',
 		launchedAnim: false,
 		launchAnim: function() {
-			$(B[8].boxName+' .pict.ground-2 img').each(function(i) {
+			$(B[8].boxName+' .pict.ground-2 > *').each(function(i) {
 				$(this).delay(i*200).queue(function() {$(this).removeClass('idle');});
 			});
 			$(B[8].boxName+' .pict .i2').delay(1200).queue(function() {$(this).pngif(1);});
