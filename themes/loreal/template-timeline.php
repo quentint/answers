@@ -64,9 +64,9 @@ Template Name: Timeline
 		</article>
 		<article id="date-4">
 			<h3>1997<p></p><p></p></h3>
-			<div class="pict ground-3"><img src="<?php bloginfo('template_url'); ?>/public/date-4-1.svg" width="400" height="195" alt="" /></div>
+			<div class="pict ground-3"><?php _svg('date-4-1', 400, 195) ?></div>
 			<div class="pict ground-2">
-				<img class="img i1" src="<?php bloginfo('template_url'); ?>/public/date-4-2.svg" width="72" height="70" alt="" />
+				<?php _svg('date-4-2', 72, 70, 'img i1') ?>
 				<div class="img i2"></div>
 			</div>
 			<div class="details">
@@ -76,10 +76,10 @@ Template Name: Timeline
 		</article>
 		<article id="date-5">
 			<h3>2004<p></p><p></p></h3>
-			<div class="pict ground-3"><img src="<?php bloginfo('template_url'); ?>/public/date-5-2.svg" width="609" height="400" alt="" /></div>
+			<div class="pict ground-3"><?php _svg('date-5-2', 609, 400) ?></div>
 			<div class="pict ground-2">
 				<img src="<?php bloginfo('template_url'); ?>/public/date-5-1_<?php _lc() ?>.svg" width="609" height="400" alt="" /><!-- ########  _fr / _en -->
-				<img class="i1 idle" src="<?php bloginfo('template_url'); ?>/public/date-5-0.svg" width="171" height="171" alt="" />
+				<?php _svg('date-5-0', 171, 171, 'i1 idle') ?>
 			</div>
 			<div class="achievement ground-1"><p></p><span><?php _lm('date-5-2004-achievement') ?></span><p></p></div>
 			<div class="details">
@@ -90,8 +90,8 @@ Template Name: Timeline
 		<article id="date-6">
 			<h3>2006<p></p><p></p></h3>
 			<div class="pict ground-3">
-				<img class="i2 idle" src="<?php bloginfo('template_url'); ?>/public/date-6-2.svg" width="289" height="345" alt="" />
-				<img class="i1" src="<?php bloginfo('template_url'); ?>/public/date-6-1.svg" width="289" height="345" alt="" />
+				<?php _svg('date-6-2', 289, 345, 'i2 idle') ?>
+				<?php _svg('date-6-1', 289, 345, 'i1') ?>
 			</div>
 			<div class="details">
 				<h4><?php _lm('date-6-2006-details') ?></h4>
@@ -100,10 +100,10 @@ Template Name: Timeline
 		</article>
 		<article id="date-7">
 			<h3>2008<p></p><p></p></h3>
-			<div class="pict ground-3"><img src="<?php bloginfo('template_url'); ?>/public/date-7-1.svg" width="478" height="450" alt="" /></div>
+			<div class="pict ground-3"><?php _svg('date-7-1', 478, 450) ?></div>
 			<div class="pict ground-2">
-				<img class="img i1" src="<?php bloginfo('template_url'); ?>/public/date-7-2_1.svg" width="478" height="450" alt="" />
-				<img class="img i2 idle" src="<?php bloginfo('template_url'); ?>/public/date-7-2_2.svg" width="111" height="346" alt="" />
+				<?php _svg('date-7-2_1', 478, 450, 'img i1') ?>
+				<?php _svg('date-7-2_2', 111, 346, 'img i2 idle') ?>
 			</div>
 			<div class="details">
 				<h4><?php _lm('date-7-2008-details') ?></h4>
@@ -113,15 +113,15 @@ Template Name: Timeline
 		<article id="date-8">
 			<h3>2009<p></p><p></p></h3>
 			<div class="pict ground-3">
-				<img class="img i3" src="<?php bloginfo('template_url'); ?>/public/date-8-2.svg" width="166" height="167" alt="" />
+				<?php _svg('date-8-2', 166, 167, 'img i3') ?>
 				<div class="img i2"></div><div class="img i1"></div>
 			</div>
 			<div class="pict ground-2">
-				<img class="i1 idle" src="<?php bloginfo('template_url'); ?>/public/date-8-1_1.svg" width="300" height="262" alt="" />
-				<img class="i2 idle" src="<?php bloginfo('template_url'); ?>/public/date-8-1_2.svg" width="300" height="262" alt="" />
-				<img class="i3 idle" src="<?php bloginfo('template_url'); ?>/public/date-8-1_3.svg" width="300" height="262" alt="" />
-				<img class="i4 idle" src="<?php bloginfo('template_url'); ?>/public/date-8-1_4.svg" width="300" height="262" alt="" />
-				<img class="i5 idle" src="<?php bloginfo('template_url'); ?>/public/date-8-1_5.svg" width="300" height="262" alt="" />
+				<?php _svg('date-8-1_1', 300, 262, 'i1 idle') ?>
+				<?php _svg('date-8-1_2', 300, 262, 'i2 idle') ?>
+				<?php _svg('date-8-1_3', 300, 262, 'i3 idle') ?>
+				<?php _svg('date-8-1_4', 300, 262, 'i4 idle') ?>
+				<?php _svg('date-8-1_5', 300, 262, 'i5 idle') ?>
 			</div>
 			<div class="achievement ground-1"><p></p><span><?php _lm('date-8-2009-achievement') ?></span><p></p></div>
 			<div class="details">
