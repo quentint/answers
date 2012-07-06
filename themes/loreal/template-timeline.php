@@ -18,11 +18,14 @@ Template Name: Timeline
 	<div id="main" role="main">
 		<article id="introduction" class="current">
 			<h3>1983 - 2012<p></p><p></p></h3>
-			<div class="pict ground-3"><img src="<?php bloginfo('template_url'); ?>/public/intro-2.svg" width="818" height="324" alt="" /></div>
-			<div class="pict ground-2"><img src="<?php bloginfo('template_url'); ?>/public/intro-1.svg" width="818" height="324" alt="" /></div>
+			<div class="pict ground-3"><?php _svg('intro-2', 818, 324) ?></div>
+			<div class="pict ground-2"><?php _svg('intro-1', 818, 324) ?></div>
 			<div class="details">
 				<h4><?php _lm('main-details') ?></h4>
-				<p><img src="<?php bloginfo('template_url'); ?>/public/keyboard.svg" width="100" height="34" alt="" /><?php _lm('main-keyboard') ?></p>
+				<p><?php
+					_svg('keyboard', 100, 34);
+					_lm('main-keyboard');
+				?></p>
 			</div>
 		</article>
 		<article id="date-1">
@@ -36,12 +39,12 @@ Template Name: Timeline
 		</article>
 		<article id="date-2">
 			<h3>1986<p></p><p></p></h3>
-			<div class="pict ground-3"><img src="<?php bloginfo('template_url'); ?>/public/date-2-2.svg" width="331" height="164" alt="" /></div>
+			<div class="pict ground-3"><?php _svg('date-2-2', 331, 164) ?></div>
 			<div class="pict ground-2">
-				<img class="i4 idle" src="<?php bloginfo('template_url'); ?>/public/date-2-1_4.svg" width="246" height="16" alt="" />
-				<img class="i3 idle" src="<?php bloginfo('template_url'); ?>/public/date-2-1_3.svg" width="246" height="164" alt="" />
-				<img class="i2 idle" src="<?php bloginfo('template_url'); ?>/public/date-2-1_2.svg" width="246" height="87" alt="" />
-				<img class="i1 idle" src="<?php bloginfo('template_url'); ?>/public/date-2-1_1.svg" width="246" height="12" alt="" />
+				<?php _svg('date-2-1_4', 246, 16, 'i4 idle') ?>
+				<?php _svg('date-2-1_3', 246, 164, 'i3 idle') ?>
+				<?php _svg('date-2-1_2', 246, 87, 'i2 idle') ?>
+				<?php _svg('date-2-1_1', 246, 12, 'i1 idle') ?>
 			</div>
 			<div class="achievement ground-1"><p></p><span><?php _lm('date-2-1986-achievement') ?></span><p></p></div>
 			<div class="details">
@@ -51,8 +54,8 @@ Template Name: Timeline
 		</article>
 		<article id="date-3">
 			<h3>1989<p></p><p></p></h3>
-			<div class="pict ground-3"><img src="<?php bloginfo('template_url'); ?>/public/date-3-2.svg" width="596" height="490" alt="" /></div>
-			<div class="pict ground-2"><img src="<?php bloginfo('template_url'); ?>/public/date-3-1.svg" width="596" height="490" alt="" /></div>
+			<div class="pict ground-3"><?php _svg('date-3-2', 596, 490) ?></div>
+			<div class="pict ground-2"><?php _svg('date-3-1', 596, 490) ?></div>
 			<div class="achievement ground-1"><p></p><span><?php _lm('date-3-1989-achievement') ?></span><p></p></div>
 			<div class="details">
 				<h4><?php _lm('date-3-1989-details') ?></h4>
