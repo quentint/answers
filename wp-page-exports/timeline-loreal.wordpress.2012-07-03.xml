@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/3.4.1" created="2012-07-03 14:39" -->
+<!-- generator="WordPress/3.4.1" created="2012-07-06 14:52" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.2/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>Loreal</title>
 	<link>http://127.0.0.1:8080/DatagifWP</link>
 	<description>Just another WordPress site</description>
-	<pubDate>Tue, 03 Jul 2012 14:39:51 +0000</pubDate>
+	<pubDate>Fri, 06 Jul 2012 14:52:30 +0000</pubDate>
 	<language>en-US</language>
 	<wp:wxr_version>1.2</wp:wxr_version>
 	<wp:base_site_url>http://127.0.0.1:8080/DatagifWP</wp:base_site_url>
@@ -139,7 +139,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-1-1983-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[Les équipes de recherche de L'Oréal réussissent à reconstruire le premier modèle d'épiderme]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Les équipes de recherche de L'Oréal réussissent à reconstruire un premier modèle d'épiderme humain]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-1-1983-achievement-en</wp:meta_key>
@@ -159,11 +159,11 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-2-1986-details-p-en</wp:meta_key>
-			<wp:meta_value><![CDATA[The L'Oréal research teams successfully reconstruct the first model of complete human skin]]></wp:meta_value>
+			<wp:meta_value><![CDATA[The L'Oréal research teams successfully reconstruct the first complete model of a human skin.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-2-1986-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[Les équipes de recherche de L'Oréal réussissent à reconstruire le premier modèle de peau complète]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Les équipes de recherche de L'Oréal réussissent à reconstruire un premier modèle de peau complète]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-2-1986-achievement-en</wp:meta_key>
@@ -179,7 +179,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-3-1989-details-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[Fin des tests de produits sur animaux]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Fin des tests sur animaux pour les produits finis]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-3-1989-details-p-en</wp:meta_key>
@@ -187,7 +187,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-3-1989-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[Grace au développement des tests de remplacement, L'Oréal met fin à tous ces tests sur produits, sans faire la moindre concession sur la sécurité des produits]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Grâce à ces avancées, L'Oréal met fin aux tests sur animaux pour ses produits finis, sans faire de compromis sur la sécurité]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-3-1989-achievement-en</wp:meta_key>
@@ -211,7 +211,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-4-1997-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[L'Oréal acquérit le modèle de peau reconstruite sous le nom d'Episkin, dans le cadre de l'évaluation de la tolérance et l'efficacité des ingrédients et produits de la cosmétiques, comme d'autres industries. Les formules sont testées en les applicant directement  sur la surface de l'échantillon de peau.]]></wp:meta_value>
+			<wp:meta_value><![CDATA[L'Oréal acquiert le savoir-faire d'Episkin, un modèle d'épiderme utilisé pour évaluer la tolérance et l'efficacité des ingrédients et produits cosmétiques, comme des produits issus d'autres industries. Les formules à tester sont appliquées directement à la surface de l'échantillon de peau.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-5-2004-details-en</wp:meta_key>
@@ -223,11 +223,11 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-5-2004-details-p-en</wp:meta_key>
-			<wp:meta_value><![CDATA[Experments on animals to evaluate cosmetic product safety are prohibited (L'Oréal had achieved this objective well before, in 1989)]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Ban on all animal testing for the evaluation of safety of cosmetic products (L'Oréal achieved this objective well before, in 1989)]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-5-2004-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[Interdiction européenne des tests sur produits (L'Oréal avait atteint cet objectif bien avant, en 1989)]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Interdiction de l'expérimentation animale pour l'évaluation de la sécurité des produits cosmétiques. (L'Oréal avait atteint cet objectif bien avant, en 1989) ]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-5-2004-achievement-en</wp:meta_key>
@@ -251,7 +251,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-6-2006-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[L'Oréal acquérit la société Skinethic, leader mondail de l'ingénierie tissulaire (cornée, nasal, pulmonaire, épithélium) qui collaborent avec des industries cosmétiques, pharmaceutiques et chimiques afin de développer des tests de sécurité et d'effciacité par le biais de peaux reconstruites]]></wp:meta_value>
+			<wp:meta_value><![CDATA[L'Oréal acquiert la société Skinethic, leader mondial en ingénierie tissulaire (cornée oculaire, muqueuse nasale et pulmonaire) qui collabore avec les industries cosmétiques, pharmaceutiques et chimiques afin de développer des tests de sécurité et d'efficacité sur tissus reconstruits]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-7-2008-details-en</wp:meta_key>
@@ -267,7 +267,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-7-2008-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[L'Oréal engage la production de peaux reconstruites asiatiques en Chine]]></wp:meta_value>
+			<wp:meta_value><![CDATA[L'Oréal commence à produire des peaux reconstruites asiatiques en Chine]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-8-2009-details-en</wp:meta_key>
@@ -279,11 +279,11 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-8-2009-details-p-en</wp:meta_key>
-			<wp:meta_value><![CDATA[Starting in 2009, it is prohibited to market cosmetic products containing ingredients tested on animals when alternative methods are available. L'Oréal easily meets these criteria.]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Starting in 2009, it is prohibited to market cosmetic products containing ingredients tested on animals when alternative methods are available. L'Oréal easily meets these criteria.  ]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-8-2009-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[A partir de 2009, les sociétés sont interdits de commercialiser les ingrédients cosmétiques, s'ils ont été testés sur animal et si des méthodes alternatives sont disponibles. L'Oréal remplit ces critères sans difficultés.]]></wp:meta_value>
+			<wp:meta_value><![CDATA[A partir de 2009, il est interdit de commercialiser des produits cosmétiques contenant des ingrédients qui auraient été testés sur animaux si des méthodes alternatives sont disponibles. L'Oréal remplit ces critères sans difficulté.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-8-2009-achievement-en</wp:meta_key>
@@ -295,11 +295,11 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-9-2011-details-en</wp:meta_key>
-			<wp:meta_value><![CDATA[Introducing Gerland]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Predictive evaluation]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-9-2011-details-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[L'Inauguration de Gerland]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Evaluation prédictive]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-9-2011-details-p-en</wp:meta_key>
@@ -307,7 +307,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-9-2011-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[Inauguration du centre d'évaluation prédictive à Gerland-Lyon en France, qui représent un saut en terme de la stratégie prédictive du Groupe. Le Centre développe des outils (dont des peaux reconstruites, modélisation moléculaire et l'imagerie) qui ont la capacité de prédire les effets adverses d'un ingrédient et potentiellement de réproduire des processus du système humain.]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Inauguration du Centre d'Evaluation Prédictive à Lyon en France, qui concrétise la stratégie prédictive du Groupe. Le Centre développe des outils (comme des peaux reconstruites, la modélisation moléculaire et l'imagerie) qui permettent de prédire les effets indésirables d'un ingrédient et potentiellement de reproduire des mécanismes du corps humain.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-10-2012-details-en</wp:meta_key>
@@ -323,7 +323,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-10-2012-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[Partenariat entre L'Oréal et the Environmental Protection Agency, avec pour objet de renforcer les systèmes prévisionnistes de l'EPA sur la toxicité chimiques, en associant les données de sécurité de L'Oréal. C'est une étape importante dans la démonstration de la valeur ajoutée de la toxicologie sans animaux.]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Partenariat entre L'Oréal et l'Agence américaine de Protection de l'Environnement (Environmental Protection Agency - EPA), pour valider l'approche et les outils prédictifs de l'EPA concernant les applications cosmétiques. C'est une étape décisive pour la généralisation de la toxicologie sans animaux. ]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-today-en</wp:meta_key>
@@ -347,7 +347,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-today-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[Grâce à 100 ans d'expertise cosmétique et 30 ans de connaissances sur les peaux reconstruites, nous nous approchons de l'abandon total des tests sur animaux. L'Oréal produit 5,7 milliards de produits par an, qui nécessite AUCUN test de ces produits. Quant aux ingrédients, les tests sur animaux ne réprésentent pas 1% des évaluations de sécurité.]]></wp:meta_value>
+			<wp:meta_value><![CDATA[Grâce à 100 ans d'expertise cosmétique et plus de 30 ans de connaissances sur les peaux reconstruites et l'évaluation prédictive, L'Oréal est sur le point d'abandonner tout test sur animaux. En 2011, L'Oréal a produit 5,7 milliards de produits, qui n'ont nécessité AUCUN test sur animaux. Quant aux ingrédients, les tests sur animaux réprésentent moins de 1% des évaluations de sécurité. ]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-today-achievement-en</wp:meta_key>
@@ -375,11 +375,11 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-tomorrow-details-p-en</wp:meta_key>
-			<wp:meta_value><![CDATA[In the future, thanks to the collective efforts of the regulating authorities, university institutions and companies like L'Oréal, we will be able to predict the safety and efficacy of ingredients on humans even before the ingredient is synthesized without using animals at any time.]]></wp:meta_value>
+			<wp:meta_value><![CDATA[In the future, thanks to the collective efforts of the regulating authorities, university institutions and companies like L'Oréal, we will be able to predict the safety and efficacy of ingredients on humans even before the ingredient is synthesized without using animals at any time. ]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-tomorrow-details-p-fr</wp:meta_key>
-			<wp:meta_value><![CDATA[A l'avenir, grâce aux efforts constants et collectifs des autorités de régulation, des institutions académiques et de sociétés telles L'Oréal, nous serons en mesure de prédire la sécurité et l'éfficacité des ingrédients dans les êtres humains, avant même que l'ingrédient ne soit synthétisé, et sans jamais avoir recours aux animaux.]]></wp:meta_value>
+			<wp:meta_value><![CDATA[A l'avenir, grâce aux efforts collectifs des autorités réglementaires, des institutions universitaires et des entreprises telles que L'Oréal, nous serons en mesure de prédire la sécurité et l'efficacité des ingrédients sur l'homme avant même que celui-ci ne soit synthétisé, et sans jamais avoir recours aux animaux.]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>date-tomorrow-achievement-en</wp:meta_key>
